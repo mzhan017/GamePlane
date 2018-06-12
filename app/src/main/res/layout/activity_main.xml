@@ -15,5 +15,36 @@
         android:text="开始游戏"
         android:textAllCaps="false"
         android:onClick="onClick" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新建"
+        android:textAllCaps="false"
+        android:onClick="onClick"/>
 
+    <LinearLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:text="新用户："/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextUserName"
+            android:text=""
+            android:inputType="text"
+            style="@style/Widget.AppCompat.EditText" >
+
+        </EditText>
+        </LinearLayout>
+    <ListView
+        android:id="@+id/list_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
 </LinearLayout>
